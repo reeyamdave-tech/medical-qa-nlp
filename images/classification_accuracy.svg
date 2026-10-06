@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="380" viewBox="0 0 640 380" font-family="Helvetica, Arial, sans-serif">
+  <rect width="640" height="380" fill="#ffffff"/>
+  <text x="320" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">Classifying MedQuAD question type (16 classes)</text>
+
+  <!-- axes: y=0 at 320, y=100 at 70 (2.5 px per %) -->
+  <g stroke="#e3e3e3" stroke-width="1">
+    <line x1="80" y1="70" x2="600" y2="70"/>
+    <line x1="80" y1="132.5" x2="600" y2="132.5"/>
+    <line x1="80" y1="195" x2="600" y2="195"/>
+    <line x1="80" y1="257.5" x2="600" y2="257.5"/>
+  </g>
+  <line x1="80" y1="320" x2="600" y2="320" stroke="#555" stroke-width="1"/>
+  <g font-size="11" fill="#555" text-anchor="end">
+    <text x="72" y="74">100%</text>
+    <text x="72" y="136.5">75%</text>
+    <text x="72" y="199">50%</text>
+    <text x="72" y="261.5">25%</text>
+    <text x="72" y="324">0%</text>
+  </g>
+
+  <!-- Naive Bayes: answers 17.1, questions 38.3 -->
+  <rect x="150" y="277.25" width="70" height="42.75" fill="#1f5f99"/>
+  <rect x="226" y="224.25" width="70" height="95.75" fill="#9bbbd9"/>
+  <g font-size="12" fill="#1a1a1a" text-anchor="middle">
+    <text x="185" y="270">17.1%</text>
+    <text x="261" y="217">38.3%</text>
+  </g>
+  <text x="223" y="342" text-anchor="middle" font-size="13" fill="#1a1a1a">Naive Bayes (unigram)</text>
+
+  <!-- DistilBERT: answers 96.07, questions 63.4 -->
+  <rect x="384" y="79.8" width="70" height="240.2" fill="#1f5f99"/>
+  <rect x="460" y="161.5" width="70" height="158.5" fill="#9bbbd9"/>
+  <g font-size="12" fill="#1a1a1a" text-anchor="middle">
+    <text x="419" y="73">96.1%</text>
+    <text x="495" y="154">63.4%</text>
+  </g>
+  <text x="457" y="342" text-anchor="middle" font-size="13" fill="#1a1a1a">Fine-tuned DistilBERT</text>
+
+  <!-- legend -->
+  <rect x="190" y="356" width="12" height="12" fill="#1f5f99"/>
+  <text x="208" y="366" font-size="12" fill="#1a1a1a">Doctor answers</text>
+  <rect x="340" y="356" width="12" height="12" fill="#9bbbd9"/>
+  <text x="358" y="366" font-size="12" fill="#1a1a1a">Patient questions</text>
+</svg>
